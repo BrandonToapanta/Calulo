@@ -1,7 +1,7 @@
-let funciones = []; // Asegúrate de que el arreglo esté definido
+let funciones = []; 
 
 function agregarFuncion() {
-    let input = document.getElementById("funcion").value.trim(); // Elimina espacios en blanco
+    let input = document.getElementById("funcion").value.trim(); 
     if (input && funciones.length < 5) {
         funciones.push(input); 
         graficar2D(); 

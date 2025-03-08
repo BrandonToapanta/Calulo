@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficadora de Funciones</title>
+    <link rel="stylesheet" href="../Modelo/styles.css">
+    <script src="../Controlador/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <h1>Graficadora de Funciones</h1>
+    
+    <div id="inputContainer">
+        <input type="text" id="funcion" placeholder="Ingrese la función">
+        <button onclick="agregarFuncion()">+</button>
+    </div>
+
+    <h2>Teclado Virtual</h2>
+    <div id="teclado">
+        <button onclick="insertarSimbolo('sin')">sin</button>
+        <button onclick="insertarSimbolo('cos')">cos</button>
+        <button onclick="insertarSimbolo('tan')">tan</button>
+        <button onclick="insertarSimbolo('π')">π</button>
+        <button onclick="insertarSimbolo('e')">e</button>
+        <button onclick="insertarSimbolo('^')">^</button>
+        <button onclick="insertarSimbolo('/')">/</button>
+        <button onclick="insertarSimbolo('√')">√</button>
+    </div>
+    
+    <div id="grafica2D"></div>
+    <button onclick="capturarPantalla()">Capturar Gráfica</button>
+    <button onclick="convertir3D()">Ver en 3D</button>
+    <div id="grafica3D" style="display:none;"></div>
+    
+    <h2>Procedimiento (Usando Integrales Definidas):</h2>
+    <div id="procedimiento"></div>
+    
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

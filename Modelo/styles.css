@@ -11,8 +11,11 @@ body {
 }
 
 input {
-    padding: 10px;
+    padding: 10px ;
     font-size: 16px;
+    min-width:80%;
+    margin: 6px 0;
+    border-radius:8px;
 }
 
 button {
@@ -47,4 +50,26 @@ button:hover {
     width: 60px;
     height: 40px;
     margin: 5px;
+}
+
+.grid-row-2{
+    height-max: 500px;
+    display: grid;
+    grid-template-columns:  5fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f3f4f6;
+
+}
+
+[onclick="agregarFuncion()"]{
+    max-width:50px;
+}
+
+#contentImputFuncion {
+    max-height: 200px; /* Altura máxima */
+    overflow-y: auto; /* Agrega scroll si hay muchos inputs */
+    border: 1px solid #ccc; /* Opcional: solo para visualizar mejor el área */
+    padding: 10px;
+    position: relative;
 }
